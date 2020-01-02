@@ -1,0 +1,14 @@
+{
+    "name": "jsconf",
+    "version": "1.0.0",
+    "description": "JS Conference Landing Page",
+    "main": "index.js",
+    "scripts": {
+        "compilesass": "node-sass sass/main.scss css/style.css -w"
+    },
+    "author": "Dylan Thunn",
+    "license": "MIT",
+    "dependencies": {
+        "node-sass": "^4.13.0"
+    }
+}

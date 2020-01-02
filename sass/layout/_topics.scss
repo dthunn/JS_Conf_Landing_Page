@@ -1,0 +1,116 @@
+.topics {
+    &__parallax {
+        position: relative;
+        opacity: 1;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-image: linear-gradient(
+                to right bottom,
+                rgba($color-primary-light, 0.8),
+                rgba($color-primary-dark, 0.8)
+            ),
+            url(../img/parallax-1.jpg);
+        height: 30rem;
+        position: relative;
+
+        @include respond(tab-land) {
+            // height: 25rem;
+        }
+
+        &--text {
+            position: absolute;
+            top: 42%;
+            width: 100%;
+            text-align: center;
+            font-size: 5rem;
+            color: $color-white;
+            text-transform: uppercase;
+            letter-spacing: 0.2rem;
+            font-weight: 300;
+        }
+    }
+    &__container {
+        max-width: 1200px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 4rem;
+        margin: 5rem auto;
+        // height: 50rem;
+
+        @include respond(tab-land) {
+            grid-template-columns: repeat(2, 1fr);
+            padding: 0 3rem;
+        }
+
+        @include respond(phone) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    &__card {
+        background-color: rgb(243, 243, 243);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3rem;
+        box-shadow: 0 0.5rem 2.5rem rgba($color-black, 0.1);
+        transition: all 0.3s;
+
+        &:hover {
+            transform: scale(1.05) translateY(-0.5rem);
+            box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+        }
+
+        @include respond(tab-land) {
+            padding: 4rem;
+        }
+    }
+
+    &__img {
+        align-self: center;
+    }
+
+    .fab {
+        font-size: 6rem;
+        margin-bottom: 4rem;
+        color: $color-primary-light;
+
+        @include respond(tab-land) {
+            font-size: 8rem;
+        }
+    }
+
+    .fas {
+        font-size: 6rem;
+        margin-bottom: 4rem;
+        color: $color-primary-light;
+
+        @include respond(tab-land) {
+            font-size: 8rem;
+        }
+    }
+
+    &__header {
+        font-size: 2.2rem;
+        margin-bottom: 2.5rem;
+        color: $color-grey-dark;
+        // text-transform: uppercase;
+
+        @include respond(tab-land) {
+            font-size: 2.8rem;
+        }
+    }
+
+    &__paragraph {
+        font-size: 1.7rem;
+        line-height: 2.5rem;
+        text-align: center;
+        color: $color-grey-dark;
+
+        @include respond(tab-land) {
+            font-size: 2rem;
+        }
+    }
+}

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="https://use.typekit.net/zcp6bzh.css" />
+        <script src="https://kit.fontawesome.com/05a38a65bc.js"></script>
+        <title>JavaScript Conference 2020</title>
+    </head>
+    <body>
+        <!-- Navigation -->
+        <div class="navigation">
+            <input
+                type="checkbox"
+                class="navigation__checkbox"
+                id="navi-toggle"
+            />
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+            <div class="navigation__background">&nbsp;</div>
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a href="#home" class="navigation__link">Home</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#about" class="navigation__link">About</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#topics" class="navigation__link">Topics</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#book" class="navigation__link">Book</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Header -->
+        <header id="home" class="header">
+            <div class="header__logo-box">
+                <i class="fab fa-js-square fa-7x"></i>
+            </div>
+            <div class="header__text-box">
+                <h1 class="heading-primary">
+                    <span class="heading-primary--main">Denver</span>
+                    <span class="heading-primary--sub">JS Conference</span>
+                </h1>
+
+                <a href="" class="btn btn--white btn--animated">Book Now</a>
+            </div>
+        </header>
+
+        <!-- Main -->
+        <main>
+            <!-- About Section -->
+            <section id="about" class="about">
+                <div class="about__container">
+                    <div class="about__img">
+                        <img
+                            src="img/about-1.jpg"
+                            alt="lecture-img"
+                            class="about__img"
+                        />
+                    </div>
+                    <div class="about__text">
+                        <h2 class="about__header--1">All Things JavaScript</h2>
+                        <p class="about__paragraph--1">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Dicta quisquam dolorum tempore consequuntur,
+                            minus aliquam nobis optio asperiores in molestias.
+                        </p>
+                    </div>
+                </div>
+                <div class="about__container">
+                    <div class="about__img--2">
+                        <img
+                            src="img/about-2.jpg"
+                            alt="lecture-img"
+                            class="about__img"
+                        />
+                    </div>
+                    <div class="about__text text--2">
+                        <h2 class="about__header--2">When and Where</h2>
+                        <p class="about__paragraph--2">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Doloremque quibusdam blanditiis omnis delectus
+                            culpa reiciendis tenetur sunt quo odio voluptas.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Topics Section -->
+            <section id="topics" class="topics">
+                <div class="topics__parallax">
+                    <div class="topics__parallax--text">
+                        <span class="topics__parallax--span">Topics</span>
+                    </div>
+                </div>
+                <div class="topics__container">
+                    <div class="topics__card">
+                        <i class="topics__img fab fa-js-square fa-7x"></i>
+                        <h2 class="topics__header">What's New</h2>
+                        <p class="topics__paragraph">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Voluptate optio magnam enim totam suscipit ab
+                            pariatur, nemo mollitia libero eligendi aut esse
+                            unde tempore ducimus exercitationem illum impedit
+                            placeat repellat.
+                        </p>
+                    </div>
+                    <div class="topics__card">
+                        <i class="fab fa-react"></i>
+                        <h2 class="topics__header">React</h2>
+                        <p class="topics__paragraph">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Sit quidem laudantium quam, alias autem
+                            assumenda voluptate exercitationem maiores corrupti.
+                            Consequatur omnis dolor similique, minus eius ea
+                            incidunt dolorum quisquam at.
+                        </p>
+                    </div>
+                    <div class="topics__card">
+                        <i class="fab fa-vuejs"></i>
+                        <h2 class="topics__header">Vue</h2>
+                        <p class="topics__paragraph">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Molestiae earum distinctio vel nihil ipsam,
+                            esse odit maxime cumque ratione. Dolor debitis, sunt
+                            delectus impedit magnam illo minima qui at rerum.
+                            oluptate optio magnam enim.
+                        </p>
+                    </div>
+                    <div class="topics__card">
+                        <i class="fas fa-desktop"></i>
+                        <h2 class="topics__header">What's Next</h2>
+                        <p class="topics__paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Asperiores accusantium cumque tempora
+                            repellat. Laudantium quo delectus unde quidem nobis
+                            quod repudiandae omnis totam. Nemo repudiandae
+                            accusantium atque iure repellendus natus.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="book" class="book">
+                <div class="book__parallax">
+                    <div class="book__parallax--text">
+                        <span class="book__parallax--span">Book Now</span>
+                    </div>
+                </div>
+                <div class="book__container">
+                    <div class="book__book">
+                        <div class="book__form">
+                            <form action="#" class="form">
+                                <h2 class="form__header">Book Now!</h2>
+                                <div class="form__group">
+                                    <input
+                                        id="name"
+                                        type="text"
+                                        class="form__input"
+                                        placeholder="Full Name"
+                                        required
+                                    />
+                                    <label for="name" class="form__label"
+                                        >Full Name</label
+                                    >
+                                </div>
+                                <div class="form__group">
+                                    <input
+                                        id="email"
+                                        type="email"
+                                        class="form__input"
+                                        placeholder="Email Address"
+                                        required
+                                    />
+                                    <label for="email" class="form__label"
+                                        >Email</label
+                                    >
+                                </div>
+                                <div class="form__group u-margin-bottom-medium">
+                                    <div class="form__radio-group">
+                                        <input
+                                            type="radio"
+                                            class="form__radio-input"
+                                            id="individual"
+                                            name="size"
+                                        />
+                                        <label
+                                            for="individual"
+                                            class="form__radio-label"
+                                        >
+                                            <span
+                                                class="form__radio-button"
+                                            ></span>
+                                            Individual Pass
+                                        </label>
+                                    </div>
+                                    <div class="form__radio-group">
+                                        <input
+                                            type="radio"
+                                            class="form__radio-input"
+                                            id="group"
+                                            name="size"
+                                        />
+                                        <label
+                                            for="group"
+                                            class="form__radio-label"
+                                        >
+                                            <span
+                                                class="form__radio-button"
+                                            ></span>
+                                            Group Pass
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form__group">
+                                    <button class="btn btn--purple">
+                                        Next Step &rarr;
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer id="footer" class="footer">
+            <div class="footer__container">
+                <p class="footer__copyright">
+                    Copyright &copy; 2020. All Rights Reserved
+                </p>
+                <div class="footer__social">
+                    <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="#"><i class="fab fa-facebook fa-lg fab-2"></i></a>
+                    <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+                </div>
+            </div>
+        </footer>
+        <!-- Preloader -->
+        <div class="loader-wrapper">
+            <span class="loader"><span class="loader-inner"></span></span>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>

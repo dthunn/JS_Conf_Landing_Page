@@ -1,0 +1,41 @@
+.footer {
+    background-color: $color-primary-light;
+    color: $color-white;
+
+    &__container {
+        max-width: 120rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 3rem;
+        align-items: center;
+
+        @include respond(tab-port) {
+            flex-direction: column;
+        }
+    }
+
+    &__copyright {
+        font-size: 2rem;
+
+        @include respond(tab-port) {
+            flex-direction: column;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .fab {
+        color: $color-white;
+        font-size: 3.5rem;
+        padding: 1rem;
+        transition: color 0.3s;
+
+        &:hover {
+            color: $color-primary-dark;
+        }
+    }
+
+    .fab-2 {
+        margin-right: 0.5rem;
+    }
+}
